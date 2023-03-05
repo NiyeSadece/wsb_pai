@@ -1,0 +1,20 @@
+    1  git close https://github.com/NiyeSadece/wsb_pai.git
+    2  git clone https://github.com/NiyeSadece/wsb_pai.git
+    3  cd wsb_pai
+    4  ls
+    5  git status
+    6  touch file
+    7  echo "wsb" > file
+    8  cat file
+    9  git status
+   10  git add *
+   11  git status
+   12  git commit
+   13  git config --global user.email "kaniya.zorthasad@gmail.com"
+   14  git config --global user.name "NiyeSadece"
+   15  git commit
+   16  git status
+   17  git push origin main
+   18  git status
+   19  history
+   20  history > historia.txt

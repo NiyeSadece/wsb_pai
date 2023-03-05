@@ -10,7 +10,7 @@
 <body>
 <?php
 require_once "../scripts/connect.php";
-$sql = "SELECT * FROM `users`;";
+$sql = "SELECT firstName, lastName, created_at as data_utworzenia FROM `users`;";
 $result = $conn->query($sql);
 //$user = $result->fetch_assoc();
 //print_r($user);
@@ -19,6 +19,7 @@ $result = $conn->query($sql);
 while ($user = $result->fetch_assoc()) {
     echo <<< USER
 Imię i nazwisko: $user[firstName] $user[lastName]<br>
+Data dodatnia urzytkownika: $user[data_utworzenia]<hr>
 USER;
 
 }
